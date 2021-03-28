@@ -100,6 +100,7 @@ header{
                         margin: 0 0.4rem;
                         font-size: 45px;
                         position: relative;
+                        transition: all .7s cubic-bezier(0.165, 0.84, 0.44, 1);
                         &::after{
                             position: absolute;
                             content: '';
@@ -113,6 +114,9 @@ header{
                         &:hover::after{
                             width: 100%;
                         }
+                    }
+                    a:hover {
+                        color: $yellow;
                     }
                 }
             }
@@ -129,6 +133,7 @@ header{
             justify-content: center;
             align-items: flex-start;
             max-width: 52rem;
+            margin-left: 3%;
             h1{
                 color: #fff;
                 font-size: 6.25rem;
@@ -139,24 +144,65 @@ header{
             p{
                 margin-top: 0;
                 color: #fff;
+                font-style: italic;
                 font-weight: 500;
                 line-height: 1.4;
                 font-size: 3.125rem;
                 width: 30rem;
             }
             button{
+                
+                a {
+                    color: white;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 1.2rem;
+                    text-decoration: none;
+                    padding: 1.5rem;
+                }
+                padding: 1rem;
                 margin-top: -2rem;
-                background-color: #000;
-                color: #fff;
-                border: none;
-                outline: none;
-                padding: 1rem 1.5rem;
-                font-size: 0.9rem;
                 border-radius: 6px;
+                background: none;
+                color: inherit;
+                border: .1rem solid $yellow;
+                font: inherit;
                 cursor: pointer;
+                outline: inherit;
+                filter: opacity(70%);
+                transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);            }
+            button:hover {
+                filter: opacity(100%) drop-shadow(0 0 0.75rem $yellow);
+                border: 0.2 solid $blue;
+                transform: scale(1.1);
             }
         }
     }
+}
+
+.material-icons {
+    margin-left: 50%;
+    transform: scale(3);
+    cursor: pointer;
+    filter: opacity(50%);
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.material-icons:hover {
+    filter: opacity(100%);
+}
+
+.section_two {
+    min-height: 100vh;
+    background-color: $Darkblue;
+
+    .white {
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        float: right;
+        background-color: white;
+        width: 70%;
+        height: 100vh;
+        }
 }
 
 @media(max-width: 850px){

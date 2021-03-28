@@ -117,6 +117,8 @@ header .container .navbar .nav-links li a {
   margin: 0 0.4rem;
   font-size: 45px;
   position: relative;
+  -webkit-transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 header .container .navbar .nav-links li a::after {
@@ -133,6 +135,10 @@ header .container .navbar .nav-links li a::after {
 
 header .container .navbar .nav-links li a:hover::after {
   width: 100%;
+}
+
+header .container .navbar .nav-links li a:hover {
+  color: #fed049;
 }
 
 header .container .navbar i {
@@ -157,6 +163,7 @@ header .container .showcase {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 52rem;
+  margin-left: 3%;
 }
 
 header .container .showcase h1 {
@@ -170,6 +177,7 @@ header .container .showcase h1 {
 header .container .showcase p {
   margin-top: 0;
   color: #fff;
+  font-style: italic;
   font-weight: 500;
   line-height: 1.4;
   font-size: 3.125rem;
@@ -177,15 +185,65 @@ header .container .showcase p {
 }
 
 header .container .showcase button {
+  padding: 1rem;
   margin-top: -2rem;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  outline: none;
-  padding: 1rem 1.5rem;
-  font-size: 0.9rem;
   border-radius: 6px;
+  background: none;
+  color: inherit;
+  border: 0.1rem solid #fed049;
+  font: inherit;
   cursor: pointer;
+  outline: inherit;
+  -webkit-filter: opacity(70%);
+          filter: opacity(70%);
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+header .container .showcase button a {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+
+header .container .showcase button:hover {
+  -webkit-filter: opacity(100%) drop-shadow(0 0 0.75rem #fed049);
+          filter: opacity(100%) drop-shadow(0 0 0.75rem #fed049);
+  border: 0.2 solid #007580;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.material-icons {
+  margin-left: 50%;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  cursor: pointer;
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+  -webkit-transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.material-icons:hover {
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+}
+
+.section_two {
+  min-height: 100vh;
+  background-color: #282846;
+}
+
+.section_two .white {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  float: right;
+  background-color: white;
+  width: 70%;
+  height: 100vh;
 }
 
 @media (max-width: 850px) {
