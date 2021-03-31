@@ -285,11 +285,12 @@ header .container .showcase button:hover {
 }
 
 .section_two .white .text {
-  max-width: 50%;
-  margin-left: 50%;
-  margin-top: 25%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
 }
