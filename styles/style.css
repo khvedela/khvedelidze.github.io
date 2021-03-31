@@ -235,15 +235,63 @@ header .container .showcase button:hover {
 .section_two {
   min-height: 100vh;
   background-color: #282846;
+  display: -ms-grid;
+  display: grid;
+}
+
+.section_two .selection {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10%;
+  margin-left: 2%;
+  padding: 5px;
+}
+
+.section_two .selection button {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+  font-size: 2.8rem;
+  border: 1rem solid #282846;
+  background-color: #282846;
+  color: white;
+  -webkit-transition: -webkit-filter 0.2s ease-in, -webkit-transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: -webkit-filter 0.2s ease-in, -webkit-transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: filter 0.2s ease-in, transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: filter 0.2s ease-in, transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-filter 0.2s ease-in, -webkit-transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  width: 100%;
+}
+
+.section_two .selection button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: drop-shadow(0 0 0.75rem #19192e);
+          filter: drop-shadow(0 0 0.75rem #19192e);
 }
 
 .section_two .white {
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
-  float: right;
   background-color: white;
-  width: 70%;
   height: 100vh;
+  width: 70%;
+  float: right;
+}
+
+.section_two .white .text {
+  max-width: 50%;
+  margin-left: 50%;
+  margin-top: 25%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
 }
 
 @media (max-width: 850px) {

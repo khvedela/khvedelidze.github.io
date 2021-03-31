@@ -194,16 +194,55 @@ header{
 .section_two {
     min-height: 100vh;
     background-color: $Darkblue;
+    display: grid;
+
+    .selection {
+        position: absolute;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 10%;
+        margin-left: 2%;
+        padding: 5px;
+        button {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            font-size: 2.8rem;
+            border: 1rem solid $Darkblue;
+            background-color: $Darkblue;
+            color: white;
+            transition: filter .2s ease-in, transform .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            width: 100%;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 0.75rem #19192e);
+        }
+        
+        
+        }
 
     .white {
         border-top-left-radius: 100px;
         border-bottom-left-radius: 100px;
-        float: right;
         background-color: white;
-        width: 70%;
         height: 100vh;
+        width: 70%;
+        float: right;
+
+        .text {
+            max-width: 50%;
+            margin-left: 50%;
+            margin-top: 25%;
+            transform: translate(-50%);
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+        }
         }
 }
+
+
 
 @media(max-width: 850px){
     header{
