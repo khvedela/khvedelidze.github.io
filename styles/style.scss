@@ -5,6 +5,8 @@ $white: #d8ebe4;
 
 //font Roboto 900
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+$font: 'Roboto', sans-serif;
+
 
 body {
     padding: 0;
@@ -216,20 +218,46 @@ header {
 
         .section1 {
             height: 100vh;
-            background-color: white;
 
             .buttons {
                 display: flex;
                 flex-direction: column;
-                margin-top: 75%;
-                padding: 0;
-                border: 0;
+                margin-top: 50%;
+                
+                button {
+                    padding: 0;
+                    border: 0;
+                    background-color: $Darkblue;
+                    color: white;
+                    border: 1rem solid $Darkblue;
+                    font-family: $font;
+                    font-size: 2.8rem;
+                    cursor: pointer;
+                    transition: all .3s cubic-bezier(0.47, 0, 0.745, 0.715);
+                }
+
+                button:not(:first-child) {
+                    margin-top: 10%;
+                }
+
+                button:hover {
+                    transform: scale(1.05);
+                    filter: drop-shadow(0 0 0.75rem #080629);                }
             }
         }
 
         .section2 {
             height: 100vh;
-            background-color: red;
+            background-color: white;
+            border-radius: 5% 0 0 5%;
+
+            p {
+                font-size: 2em;
+                text-align: justify;
+                padding: 10%;
+                text-align: center;
+                // vertical-align: middle;
+            }
         }
     }
 }

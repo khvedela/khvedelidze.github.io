@@ -243,7 +243,6 @@ header .container .showcase button:hover {
 
 .section_two main .section1 {
   height: 100vh;
-  background-color: white;
 }
 
 .section_two main .section1 .buttons {
@@ -254,14 +253,44 @@ header .container .showcase button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 75%;
+  margin-top: 50%;
+}
+
+.section_two main .section1 .buttons button {
   padding: 0;
   border: 0;
+  background-color: #282846;
+  color: white;
+  border: 1rem solid #282846;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.8rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.section_two main .section1 .buttons button:not(:first-child) {
+  margin-top: 10%;
+}
+
+.section_two main .section1 .buttons button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: drop-shadow(0 0 0.75rem #080629);
+          filter: drop-shadow(0 0 0.75rem #080629);
 }
 
 .section_two main .section2 {
   height: 100vh;
-  background-color: red;
+  background-color: white;
+  border-radius: 5% 0 0 5%;
+}
+
+.section_two main .section2 p {
+  font-size: 2em;
+  text-align: justify;
+  padding: 10%;
+  text-align: center;
 }
 
 @media (max-width: 850px) {
