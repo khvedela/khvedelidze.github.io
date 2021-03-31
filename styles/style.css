@@ -232,23 +232,21 @@ header .container .showcase button:hover {
           filter: opacity(100%);
 }
 
-.section_two {
-  min-height: 100vh;
-  background-color: #282846;
+.section_two main {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 0.5fr 1.5fr;
+      grid-template-columns: 0.5fr 1.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
-.section_two .selection {
-  position: absolute;
-  font-family: 'Roboto', sans-serif;
-  margin-top: 10%;
-  margin-left: 2%;
-  padding: 5px;
+.section_two main .section1 {
+  height: 100vh;
+  background-color: white;
 }
 
-.section_two .selection button {
-  cursor: pointer;
+.section_two main .section1 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,43 +254,14 @@ header .container .showcase button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 50px;
-  font-size: 2.8rem;
-  border: 1rem solid #282846;
-  background-color: #282846;
-  color: white;
-  -webkit-transition: -webkit-filter 0.2s ease-in, -webkit-transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: -webkit-filter 0.2s ease-in, -webkit-transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: filter 0.2s ease-in, transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: filter 0.2s ease-in, transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-filter 0.2s ease-in, -webkit-transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  width: 100%;
+  margin-top: 75%;
+  padding: 0;
+  border: 0;
 }
 
-.section_two .selection button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-filter: drop-shadow(0 0 0.75rem #19192e);
-          filter: drop-shadow(0 0 0.75rem #19192e);
-}
-
-.section_two .white {
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  background-color: white;
+.section_two main .section2 {
   height: 100vh;
-  width: 70%;
-  float: right;
-}
-
-.section_two .white .text {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 50%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
+  background-color: red;
 }
 
 @media (max-width: 850px) {
